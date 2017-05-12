@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="0.30"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Digite o Valor do Veículo:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txtvalor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="numberDecimal"
+            android:hint="Valor"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Digite o Valor da Entrada:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtentrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="numberDecimal"
+            android:hint="Entrada:"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Digite a Quantidade de meses:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtmeses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="number"
+            android:hint="Meses:"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Digite a taxa de Juros:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txtjuros"
+            android:hint="Juros:"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="367dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/bot_simular"
+            android:onClick="calcula"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvretorno"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvretorno1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvretorno2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvretorno3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvretorno4"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
